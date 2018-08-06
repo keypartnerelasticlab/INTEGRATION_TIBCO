@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "f0ab4a80-70b1-11e8-a910-013eb853f149",
+    "_type": "visualization",
+    "_source": {
+      "title": "tibco_AppNode-Giove_pid",
+      "visState": "{\"title\":\"tibco_AppNode-Giove_pid\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":false},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":20}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"jolokia.PRODOTTO.jvm.PID\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"jolokia.PRODOTTO.jvm.PID\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"_term\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"metricbeat-*\",\"filter\":[{\"meta\":{\"index\":\"metricbeat-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"metricset.module\",\"value\":\"jolokia\",\"params\":{\"query\":\"jolokia\",\"type\":\"phrase\"},\"fixedFlag\":false},\"query\":{\"match\":{\"metricset.module\":{\"query\":\"jolokia\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    }
+  },
+  {
+    "_id": "858222b0-72dc-11e8-8895-6b506bdde2f1",
+    "_type": "visualization",
+    "_source": {
+      "title": "tibco_AppNode-Giove_StartTime",
+      "visState": "{\"title\":\"tibco_AppNode-Giove_StartTime\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":false},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":14}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"AppNode.Tibco_Poc.StartTime\",\"aggregate\":\"concat\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"AppNode.Tibco_Poc.StartTime\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"_term\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"metricbeat-*\",\"filter\":[{\"meta\":{\"index\":\"metricbeat-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"metricset.module\",\"value\":\"jolokia\",\"params\":{\"query\":\"jolokia\",\"type\":\"phrase\"},\"fixedFlag\":false},\"query\":{\"match\":{\"metricset.module\":{\"query\":\"jolokia\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    }
+  },
+  {
+    "_id": "c5146d60-70b2-11e8-a910-013eb853f149",
+    "_type": "visualization",
+    "_source": {
+      "title": "tibco_AppNode-Giove_upTime",
+      "visState": "{\"title\":\"tibco_AppNode-Giove_upTime\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"AppNode.Tibco_Poc.UpTime\",\"aggregate\":\"average\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\",\"customLabel\":\"Giove UpTime\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"AppNode.Tibco_Poc.UpTime\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"_term\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"metricbeat-*\",\"filter\":[{\"meta\":{\"index\":\"metricbeat-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"metricset.module\",\"value\":\"jolokia\",\"params\":{\"query\":\"jolokia\",\"type\":\"phrase\"},\"fixedFlag\":false},\"query\":{\"match\":{\"metricset.module\":{\"query\":\"jolokia\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    }
+  },
+  {
+    "_id": "988200f0-70ad-11e8-a910-013eb853f149",
+    "_type": "visualization",
+    "_source": {
+      "title": "tibco_node-Giove_CPU",
+      "visState": "{\"title\":\"tibco_node-Giove_CPU\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"cpu usage\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"cpu usage\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"AppNode.Tibco_Poc.CPUsage\",\"customLabel\":\"cpu usage\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"metricbeat-*\",\"filter\":[{\"meta\":{\"index\":\"metricbeat-*\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"metricset.module\",\"value\":\"jolokia\",\"params\":{\"query\":\"jolokia\",\"type\":\"phrase\"},\"fixedFlag\":false},\"query\":{\"match\":{\"metricset.module\":{\"query\":\"jolokia\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    }
+  },
+  {
+    "_id": "e2e028e0-70ab-11e8-a910-013eb853f149",
+    "_type": "visualization",
+    "_source": {
+      "title": "tibco_node-Giove_heap",
+      "visState": "{\n  \"title\": \"tibco_node-Giove_heap\",\n  \"type\": \"line\",\n  \"params\": {\n    \"type\": \"line\",\n    \"grid\": {\n      \"categoryLines\": true,\n      \"style\": {\n        \"color\": \"#eee\"\n      },\n      \"valueAxis\": \"ValueAxis-1\"\n    },\n    \"categoryAxes\": [\n      {\n        \"id\": \"CategoryAxis-1\",\n        \"type\": \"category\",\n        \"position\": \"bottom\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\"\n        },\n        \"labels\": {\n          \"show\": true,\n          \"truncate\": 100\n        },\n        \"title\": {}\n      }\n    ],\n    \"valueAxes\": [\n      {\n        \"id\": \"ValueAxis-1\",\n        \"name\": \"LeftAxis-1\",\n        \"type\": \"value\",\n        \"position\": \"left\",\n        \"show\": true,\n        \"style\": {},\n        \"scale\": {\n          \"type\": \"linear\",\n          \"mode\": \"normal\"\n        },\n        \"labels\": {\n          \"show\": true,\n          \"rotate\": 0,\n          \"filter\": false,\n          \"truncate\": 100\n        },\n        \"title\": {\n          \"text\": \"heap\"\n        }\n      }\n    ],\n    \"seriesParams\": [\n      {\n        \"show\": \"true\",\n        \"type\": \"line\",\n        \"mode\": \"normal\",\n        \"data\": {\n          \"label\": \"heap usage\",\n          \"id\": \"1\"\n        },\n        \"valueAxis\": \"ValueAxis-1\",\n        \"drawLinesBetweenPoints\": true,\n        \"showCircles\": true\n      },\n      {\n        \"show\": true,\n        \"mode\": \"normal\",\n        \"type\": \"line\",\n        \"drawLinesBetweenPoints\": true,\n        \"showCircles\": true,\n        \"data\": {\n          \"id\": \"2\",\n          \"label\": \"Average jolokia.TIBCO_POC.jvm.Memory.HeapUsage.committed\"\n        },\n        \"valueAxis\": \"ValueAxis-1\"\n      }\n    ],\n    \"addTooltip\": true,\n    \"addLegend\": true,\n    \"legendPosition\": \"right\",\n    \"times\": [],\n    \"addTimeMarker\": false\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"avg\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"AppNode.Tibco_Poc.HeapUsage\",\n        \"customLabel\": \"heap usage\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"avg\",\n      \"schema\": \"metric\",\n      \"params\": {\n        \"field\": \"jolokia.TIBCO_POC.jvm.Memory.HeapUsage.committed\",\n        \"customLabel\": \"\"\n      }\n    },\n    {\n      \"id\": \"3\",\n      \"enabled\": true,\n      \"type\": \"date_histogram\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"@timestamp\",\n        \"interval\": \"auto\",\n        \"customInterval\": \"2h\",\n        \"min_doc_count\": 1,\n        \"extended_bounds\": {}\n      }\n    }\n  ]\n}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"metricbeat-*\",\n  \"filter\": [\n    {\n      \"meta\": {\n        \"index\": \"metricbeat-*\",\n        \"negate\": false,\n        \"disabled\": false,\n        \"alias\": null,\n        \"type\": \"phrase\",\n        \"key\": \"metricset.module\",\n        \"value\": \"jolokia\",\n        \"params\": {\n          \"query\": \"jolokia\",\n          \"type\": \"phrase\"\n        },\n        \"fixedFlag\": false\n      },\n      \"query\": {\n        \"match\": {\n          \"metricset.module\": {\n            \"query\": \"jolokia\",\n            \"type\": \"phrase\"\n          }\n        }\n      },\n      \"$state\": {\n        \"store\": \"appState\"\n      }\n    }\n  ],\n  \"query\": {\n    \"language\": \"lucene\",\n    \"query\": \"\"\n  }\n}"
+      }
+    }
+  }
+]

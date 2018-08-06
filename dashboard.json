@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "4e1d53e0-70b0-11e8-a910-013eb853f149",
+    "_type": "dashboard",
+    "_source": {
+      "title": "TibcoEngine_AppNodeGiove_0",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"title\":\"heapUsage\",\"panelIndex\":\"1\",\"gridData\":{\"x\":4,\"y\":2,\"w\":8,\"h\":3,\"i\":\"1\"},\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"id\":\"e2e028e0-70ab-11e8-a910-013eb853f149\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":0,\"w\":4,\"h\":2,\"i\":\"3\"},\"title\":\"PID\",\"id\":\"f0ab4a80-70b1-11e8-a910-013eb853f149\",\"type\":\"visualization\",\"version\":\"6.2.4\",\"embeddableConfig\":{\"spy\":null}},{\"panelIndex\":\"4\",\"gridData\":{\"x\":4,\"y\":0,\"w\":4,\"h\":2,\"i\":\"4\"},\"title\":\"upTime\",\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"c5146d60-70b2-11e8-a910-013eb853f149\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":8,\"y\":0,\"w\":4,\"h\":2,\"i\":\"5\"},\"title\":\"startTime\",\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"858222b0-72dc-11e8-8895-6b506bdde2f1\"},{\"title\":\"cpuLoad\",\"panelIndex\":\"6\",\"gridData\":{\"x\":0,\"y\":2,\"w\":4,\"h\":3,\"i\":\"6\"},\"version\":\"6.2.1\",\"type\":\"visualization\",\"id\":\"eababc00-7467-11e8-8e12-45976846bae2\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]
